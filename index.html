@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing URL Checker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🔍 Phishing Checker Tool</h1>
+    <form method="POST">
+        <input type="text" name="url" placeholder="Enter website URL" required>
+        <button type="submit">Check</button>
+    </form>
+    {% if result %}
+        <div class="result">{{ result }}</div>
+    {% endif %}
+</body>
+</html>
+
