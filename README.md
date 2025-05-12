@@ -30,6 +30,7 @@ Cybersecurity-Awareness-Phishing-Simulation/
 
 ### BASH
 git clone https://github.com/amartyadas27/Cybersecurity-Awareness-Phishing-Simulation.git
+
 cd Cybersecurity-Awareness-Phishing-Simulation
 
 ## Create a virtual Enviroment 
@@ -39,7 +40,7 @@ Source venv/bin/activate # ON WINDOWS USE: venv\Scripts\activate
 
 pip install -r requirements.txt
 
-##Run the Flask APP
+## Run the Flask APP
 
 python app.py
 
