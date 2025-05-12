@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #007BFF, #FF7F50);
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    overflow-x: hidden;
+}
+
+input, button {
+    padding: 12px 14px;
+    margin: 10px;
+    width: 320px;
+    max-width: 90vw;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 127, 80, 0.6);
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    background: #fff;
+    color: #333;
+    border: 2px solid transparent;
+}
+
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 6px #007BFF;
+}
+
+button {
+    background: #FF7F50; /* Orange */
+    color: white;
+    animation: pulseButton 2.5s infinite alternate ease-in-out;
+}
+
+button:hover {
+    background: #007BFF;
+    box-shadow: 0 0 15px #007BFF;
+    animation-play-state: paused;
+    color: #fff;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes pulseButton {
+    0% {
+        box-shadow: 0 0 8px #FF7F50;
+    }
+    100% {
+        box-shadow: 0 0 20px #FF7F50;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
