@@ -1,4 +1,4 @@
-# Cybersecurity-Awareness-Phishing-Simulation
+# Phishing Link checker
 
 
 # A simple web application built with Python and Flask the Checks if a given URL is Potentially a site using basic heuristic methods.
@@ -14,7 +14,7 @@ Modular and easy to extend
 
 ### Project Structure
 
-Cybersecurity-Awareness-Phishing-Simulation/
+phishing checker/
 |
 |---app.py # Main Flask aplication
 |---requirements.txt # Python dependencies
